@@ -319,7 +319,7 @@ def build(args):
     if args.dataset_file == 'custom':
         # "You should always use num_classes = max_id + 1 where max_id is the highest class ID that you have in your dataset."
         # Reference: https://github.com/facebookresearch/detr/issues/108#issuecomment-650269223
-        num_classes = 61
+        num_classes = 1
         
     device = torch.device(args.device)
 
