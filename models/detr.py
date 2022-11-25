@@ -320,7 +320,7 @@ def build(args):
         # "You should always use num_classes = max_id + 1 where max_id is the highest class ID that you have in your dataset."
         # Reference: https://github.com/facebookresearch/detr/issues/108#issuecomment-650269223
         #num_classes = 1 # for baloon data
-        num_classes = 60 # for Taco data
+        num_classes = 59 # for Taco data
         
     device = torch.device(args.device)
 
