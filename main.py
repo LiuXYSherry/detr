@@ -181,7 +181,7 @@ def main(args):
             
         del checkpoint["model"]["class_embed.weight"]
         del checkpoint["model"]["class_embed.bias"]
-        del checkpoint["model"]["query_embed.weight"]
+        #del checkpoint["model"]["query_embed.weight"]
             
         #model_without_ddp.load_state_dict(checkpoint['model']) 
         model_without_ddp.load_state_dict(checkpoint['model'], strict=False)
